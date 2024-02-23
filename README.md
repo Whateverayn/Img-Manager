@@ -1,2 +1,2 @@
-# kkImg-Manager
+# Img-Manager
 Hash-based Image Management
