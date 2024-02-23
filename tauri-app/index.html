@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/src/myStyles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Img-Manager</title>
+  <script type="module" src="/src/myMain.ts" defer></script>
+</head>
+
+<!-- <body oncontextmenu="return false;"> -->
+
+<body>
+  <main>
+    <div id="title-bar">
+      <div>
+        <!-- 左側 -->
+        <button id="winClo">
+          <img class="darkInv" src="/src/assets/close_FILL0_wght400_GRAD0_opsz24.svg" alt="ウィンドウを閉じる">
+        </button>
+        <button id="winMin">
+          <img class="darkInv" src="/src/assets/minimize_FILL0_wght400_GRAD0_opsz24.svg" alt="ウィンドウをしまう">
+        </button>
+        <button id="winMax" data-s="1">
+          <img class="darkInv" src="/src/assets/expand_content_FILL0_wght400_GRAD0_opsz24.svg" alt="ウィンドウを最大化する">
+          <img class="darkInv" src="/src/assets/collapse_content_FILL0_wght400_GRAD0_opsz24.svg" alt="前のウィンドウサイズに戻す">
+        </button>
+      </div>
+      <div data-tauri-drag-region>
+        <!-- 中央 -->
+        <div data-tauri-drag-region>
+          <h1 data-tauri-drag-region>Img Manager</h1>
+        </div>
+      </div>
+      <div>
+        <!-- 右側 -->
+        <button>
+          <img class="darkInv" src="/src/assets/refresh_FILL0_wght400_GRAD0_opsz24.svg" alt="再読み込み">
+        </button>
+      </div>
+    </div>
+    <div>
+      <!-- 本文 -->
+      <p>こんにちは</p>
+    </div>
+
+  </main>
+</body>
+
+</html>
