@@ -21,7 +21,7 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-}
+  }
 
 html {
   background-color: transparent;
@@ -31,6 +31,7 @@ html {
 
 main {
   background-color: var(--background-color);
+  opacity: 0.75;
   overflow: auto;
   height: 100%;
   width: 100%;
@@ -156,6 +157,10 @@ button {
 }
 #winMax[data-s="2"] > *:first-child {
   display: none;
+}
+
+.out > div{
+  margin: 12px;
 }
 
 @media (prefers-color-scheme: dark) {
