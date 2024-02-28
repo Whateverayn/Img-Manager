@@ -35,22 +35,36 @@
       </div>
       <div>
         <!-- 右側 -->
-        <button>
+        <!-- <button>
           <img class="darkInv" src="/src/assets/refresh_FILL0_wght400_GRAD0_opsz24.svg" alt="再読み込み">
-        </button>
+        </button> -->
+        <select name="mode" id="mode">
+          <option value="page_home">家</option>
+          <option value="page_ffmpeg">FFmpeg</option>
+        </select>
       </div>
     </div>
-    <div class="out">
+    <div class="out" id="page_cont">
       <!-- 本文 -->
-      <div>
+      <div id="page_home" data-s="true">
         <!-- ホーム -->
         <h2>家</h2>
         <ul>
           <li>
-            <button>FFmpeg</button>
+            <button id="home_ffmpeg">FFmpeg</button>
           </li>
         </ul>
         <!-- ホーム 終了 -->
+      </div>
+      <div id="page_ffmpeg" data-s="false">
+        <!-- FFmpeg -->
+        <h2>FFmpeg</h2>
+        <p>あああ</p>
+        <form id="ffmpeg_form" onsubmit="return false;">
+          <p>okokoko</p>
+          <input type="text" name="inputFileName" id="inputFileName">
+        </form>
+        <!-- FFmpeg 終了 -->
       </div>
     </div>
 
